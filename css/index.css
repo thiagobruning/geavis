@@ -22,7 +22,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/img/dashboard.jpg');
+    background-image: url('../img/dashboard.jpg');
     min-height: 100%;
 }
 
