@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Geavis - Página Inicial</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link href="/css/index.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GEAVIS - Sistema
+                gerador de avaliações</span>
+        </div>
+    </div>
+
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+
+            <nav class="transparent" role="navigation">
+                <!-- @if (!Auth::guest()) -->
+                <!-- <div class="nav-wrapper">
+                    <ul class="right">
+                        <li><a class="side-activate" data-activates="slide-out"><i class="material-icons">menu</i></a>
+                        </li>
+                    </ul> -->
+                    <!-- @endif -->
+                    <div class="nav-wrapper container"><a id="logo-container" href="{{ route('main') }}"
+                            class="brand-logo">Geavis</a>
+                        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
+                                class="material-icons">menu</i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="about">
+
+        <div class="w3-content w3-container w3-padding-64" id="about">
+            <h2 class="w3-center">Sobre o sistema</h2>
+            <p class="w3-center">
+                Geavis é um sistema gerador de avaliações, em formato PDF. Permite aos professores
+                manter uma organização de suas ministrações com seus conteúdos e perguntas.
+            </p>
+        </div>
+
+        <div class="w3-content w3-container w3-padding-32" id="about">
+            <h4 class="w3-center">Funcionalidades</h4>
+
+            <div class="w3-row">
+
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="icon-block">
+                        <h2 class="center icones"><i class="material-icons">list</i></h2>
+                        <h5 class="center">Conteúdos</h5>
+                        <p class="light center">
+                            Nesta seção o professor poderá visualizar seus conteúdos
+                            cadastrados nas disciplinas a qual está ministrando. Podendo
+                            também editá-los ou cadastrar um novo.
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="icon-block">
+                        <h2 class="center icones"><i class="material-icons">live_help</i></h2>
+                        <h5 class="center">Perguntas</h5>
+                        <p class="light center">
+                            Nesta seção o professor poderá visualizar as perguntas
+                            cadastradas nos seus conteúdos, sendo capaz também de cadastrar
+                            novas perguntas para seus conteúdos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="icon-block">
+                        <h2 class="center icones"><i class="material-icons">assignment</i></h2>
+                        <h5 class="center">Ministrações</h5>
+                        <p class="light center">
+                            Nesta seção o professor poderá visualizar suas ministrações
+                            ativas ou realizar uma nova.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="icon-block">
+                        <h2 class="center icones"><i class="material-icons">list_alt</i></h2>
+                        <h5 class="center">Avaliações</h5>
+                        <p class="light center">
+                            Nesta seção o professor poderá optar entre uma geração
+                            manual ou automática, selecionando a disciplina, os
+                            conteúdos e as perguntas das suas ministrações ativas, para
+                            no final o professor receber sua avaliação em formato PDF.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                <strong class="white-text">Desenvolvido por Thiago Souza - IFPR Campus Paranaguá</strong>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
